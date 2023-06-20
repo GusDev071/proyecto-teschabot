@@ -1,0 +1,23 @@
+<div class="chat-container" [ngClass]="{'dark-mode': isDarkMode}">
+    <div class="chat-header">
+        <a href="muro/">
+            <mat-icon>exit_to_app</mat-icon>
+        </a>
+        <img src="assets/images/logo_tb.png" alt="">
+        <button mat-icon-button (click)="toggleDarkMode()">
+        <mat-icon>dark_mode</mat-icon>
+      </button>
+    </div>
+    <div class="chat-body" #chatBody>
+        <div class="message" *ngFor="let message of messages">
+            <p [ngClass]="{'user-message': message.isUser, 'bot-message': !message.isUser}">
+                {{ message.content }}
+            </p>
+        </div>
+        <div #scrollBottom></div>
+    </div>
+    <div class="chat-footer">
+        <input type="text" [(ngModel)]="newMessage" (keydown.enter)="sendMessage()" placeholder="Escribe tu mensaje..." />
+        <button (click)="sendMessage()">Enviar</button>
+    </div>
+</div>

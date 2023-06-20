@@ -1,0 +1,133 @@
+.publicacion {
+    display: flex;
+    justify-content: space-around;
+}
+
+.example-card {
+    max-width: 700px;
+    height: 500px;
+    background-color: #FCFCDA;
+    color: black;
+    margin-right: 50px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.publicacion img {
+    width: 700px;
+    height: 320px;
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 63px;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: all 300ms ease;
+}
+
+.btn-wsp:hover {
+    background: #20ba5a;
+}
+
+.card-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: 10;
+    transform: translateY(50px);
+    border: 10px solid #5C6B07;
+    overflow: hidden;
+    position: absolute;
+    background: #fff;
+    margin-left: 55px;
+}
+
+.card-img img {
+    width: 120%;
+    height: 120%;
+    transform: translate(-8%, -8%);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    transform: translateY(170px);
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+    align-items: center;
+}
+
+.content p {
+    margin: 0 0;
+}
+
+.content a {
+    text-decoration: none;
+    color: gray;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.box {
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box:hover {
+    background-color: rgba(128, 128, 128, 0.137);
+}
+
+.perfil {
+    background-color: #FCFCDA;
+}
+
+.btn {
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transform: translateY(10px);
+    background: #ff9472;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+}
+
+.btn a {
+    color: black;
+}
+
+.btn a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: rgb(255, 159, 130);
+}

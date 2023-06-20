@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logot img {
+    height: 65px;
+    height: 67px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.logor img {
+    height: 100px;
+    height: 100px;
+    margin-right: 20px;
+}

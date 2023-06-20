@@ -1,0 +1,53 @@
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.principal p {
+    font-size: 65px;
+    font-weight: normal;
+    color: #96AC1B;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.botones a {
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+
+.botones a:hover {
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.58);
+    scale: 1.05;
+}
+
+#uno {
+    background-color: #FFE180;
+    border-radius: 10px;
+}
+
+#dos {
+    background-color: #EAFFC2;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.imagen img {
+    max-width: 95%;
+    animation: movimiento 2.5s linear infinite;
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
